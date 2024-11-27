@@ -53,6 +53,7 @@ nav ul li a:hover::after {
     padding: 10px 10%;
 }
 
+
 /**** Header Section ****/
 
 .header-sect {
@@ -77,7 +78,7 @@ nav ul li a:hover::after {
     border: 1px solid #C3BA99;
     color: white;
     font-size: 18px;
-    margin: 20px 0;
+    margin: 30px 0;
     transition: 0.5s;
 }
 
@@ -91,13 +92,26 @@ nav ul li a:hover::after {
     width: 100%;
     height: auto;
     color: black;
+    padding: 7em 12%;
+}
+
+.welcome-sect .icon {
+    margin-bottom: 1.5em;
+    font-size: 30px;
+    color: #C3BA99;
+}
+
+.welcome-sect .icon:hover {
+    transform: translateY(-4px);
 }
 
 .welcome-text {
-    padding: 0 5em;
     font-size: 20px;
-    margin: 4em 3em;
     text-align: center;
+}
+
+.welcome-text p {
+    line-height: 2;
 }
 
 .white-btn {
@@ -107,13 +121,76 @@ nav ul li a:hover::after {
     background-color: #C3BA99;
     color: white;
     font-size: 18px;
-    margin: 20px 0;
+    margin: 2em 0;
 }
 
 .white-btn:hover {
     color: #C3BA99;
     border: 1px solid #C3BA99;
     background-color: transparent;
+}
+
+/**** App Section ****/
+
+.app-sect {
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    padding: 5em 10%;
+    background-color: #333;
+}
+
+.app-text {
+    margin: 1em 5em;
+}
+
+.app-text h1 {
+    font-size: 45px;
+    padding-bottom: 0.5em;
+}
+
+.app-description {
+    margin: 1em 2em;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.left-column img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.right-column {
+    flex: 1;
+    padding: 3em;
+    text-align: center; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-column img {
+    max-width: 50%;
+    height: auto; 
+    margin: 0.5em;
+}
+
+.right-column img:hover {
+    transform: translate(2px,-2px);
+}
+
+.right-column p {
+    margin: 0.5em;
 }
 
 /**** Carousel Section ****/
@@ -137,7 +214,10 @@ button{
 }
 
 .carousel-section h1 {
+    font-size: 45px;
     margin-top: 2em; 
+    margin-bottom: 0.25em;
+    color: #333
   }  
 
 .carousel-view {
@@ -185,143 +265,84 @@ button{
   border-radius: 5px;
 }
 
-/**** App Section ****/
-
-.app-sect {
-    width: 100%;
-    height: auto;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-}
-
-.app-text {
-    margin: 3em 5em;
-}
-
-.app-description {
-    margin: 1em 3em;
-    line-height: 1.5;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.left-column {
-    flex: 1;
-}
-
-.left-column img {
-    max-width: 100%;
-    height: auto; 
-}
-
-.right-column {
-    flex: 1;
-    padding: 3em;
-    text-align: center; 
-    flex-direction: column;
-    align-items: center;
-}
-
-.right-column img {
-    max-width: 50%;
-    height: auto; 
-    margin: 0.5em;
-}
-
-.right-column p {
-    margin: 0.5em;
-}
-
-
-/**** Contact Section ****/
-
-.contact-sect {
-    background: #C3BA99;
-    padding: 4em 10em;
-}
-
-.contact-text {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-form {
-    margin: 10px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    color: #333;
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #C3BA99;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    color: #C3BA99;
-    background-color: white;
-    border: 1px solid #C3BA99;
-}
-
-
 /**** Footer Section ****/
 .footer {
     background-color: #333;
     text-align: center;
+    color: white;
 }
 
 .footer-content {
-    padding-top: 2em;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo img {
     max-width: 20em;
+    padding: 0.5em 0;
 }
 
 .contact-info {
-    color: white; 
-    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
 }
 
-
-.social-links img {
-    width: 20%;
-    margin: 1em 0;
+.contact-item {
+    gap: 0.5em;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.copyright p {
+.icon-container {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-text {
+    display: none;
+    font-size: 1.2em;
+    color: #444;
+    padding-right: 0.5em;
+    transition: opacity 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: white;
+    border-radius: 15px;
+    transform: scale(1.05); /* Slight zoom effect for better hover feedback */
+}
+
+.contact-item:hover .contact-text {
+    display: inline-block;
+    color: #444;
+    opacity: 1; /* Ensure text becomes visible smoothly */
+}
+
+.copyright {
     background-color: #222;
-    color: white; 
-    font-size: 14px; 
-    padding: 2em 0;
+    color: white;
+    font-size: 14px;
+    padding: 1em 0;
+}
+
+/* Additional Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5em;
+    }
 }
